@@ -1,15 +1,16 @@
 <?php
+
 return [
     'mail' => [
-        'name'              => '',
-        'host'              => '',
-        'port'              => 465,
-        'connection_class'  => 'plain',
-        'connection_config' => array(
+        'name' => '',
+        'host' => '',
+        'port' => 465,
+        'connection_class' => 'plain',
+        'connection_config' => [
             'username' => '',
             'password' => '',
-            'ssl'      => '',
-        ),
+            'ssl' => '',
+        ],
     ],
     'mailconf' => [
         'purchase' => [
@@ -20,6 +21,6 @@ return [
     'website' => [
         'host' => '',
         'scheme' => 'http',
-        'port' => 80
-    ]
+        'port' => 80,
+    ],
 ];
