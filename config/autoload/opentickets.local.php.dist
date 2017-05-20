@@ -1,8 +1,15 @@
 <?php
 
 use OpenTickets\Tickets\Domain\ValueObject\DiscountType;
+use Doctrine\DBAL\Driver\PDOMySql\Driver as PDOMySql;
+use ZfrStripe\Client\StripeClient;
+
 
 return [
+    'view_manager' => [
+        'display_not_found_reason' => false,
+        'display_exceptions'       => false,
+    ],
     'opentickets' => [
         'financial' => [
             'taxRate' => 0,
@@ -10,8 +17,9 @@ return [
             'displayTax' => false,
         ],
         'tickets' => [
-            'type1' => ['name' => 'Standard Ticket', 'cost' => 5000, 'available' => 100],
-            'type2' => ['name' => 'VIP Ticket', 'cost' => 10000, 'available' => 10],
+            'type1' => ['name' => 'Blind Bird Ticket', 'cost' => 9500, 'available' => 50],
+            'type2' => ['name' => 'Early Bird Ticket', 'cost' => 11000, 'available' => 50],
+            'type3' => ['name' => 'Standard Ticket', 'cost' => 13000, 'available' => 150],
         ],
         'discountCodes' => [
             '50off' => [
@@ -30,5 +38,40 @@ return [
                 'name' => '$5 Off',
             ],
         ],
+    ],
+    'mail' => [
+        'name'              => 'mailtrap',
+        'host'              => 'smtp.sparkpostmail.com',
+        'port'              => 587,
+        'connection_class'  => 'login',
+        'connection_config' => [
+            'username' => 'SMTP_Injection',
+            'password' => 'xxx',
+            'ssl'      => 'tls',
+        ],
+    ],
+    'website' => [
+        'host' => 'tickets.scotlandphp.co.uk',
+        'scheme' => 'https',
+        'port' => 443
+    ],
+    'doctrine' => [
+        'connection' => [
+            'orm_default' => [
+                'driverClass' => PDOMySql::class,
+                'params' => [
+                    'host'     => '127.0.0.1',
+                    'port'     => '3306',
+                    'user'     => 'root',
+                    'password' => 'bananas',
+                    'dbname'   => 'opentickets',
+                ],
+            ],
+        ],
+    ],
+    'zfr_stripe' => [
+        'secret_key' => 'xxx',
+        'publishable_key' => 'xxx',
+        'version' => StripeClient::LATEST_API_VERSION,
     ],
 ];
