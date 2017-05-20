@@ -44,3 +44,14 @@ body { margin-top:20px; }
 .credit-card-box .panel-heading img {
     min-width: 180px;
 }
+
+#scotphp .panel .panel-heading{
+    background: #30adfd;
+    color: white;
+}
+
+.btn-scotphp {
+    background-color: #30adfd;
+    color: white;
+    text-shadow: none !important;
+}

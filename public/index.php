@@ -11,6 +11,10 @@ if (php_sapi_name() === 'cli-server' && is_file(__DIR__ . parse_url($_SERVER['RE
     return false;
 }
 
+if(!file_exists('vendor/autoload.php')) {
+    die('Run composer install');
+}
+
 // Setup autoloading
 require 'vendor/autoload.php';
 
