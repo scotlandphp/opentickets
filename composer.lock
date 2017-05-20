@@ -2451,12 +2451,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/scotlandphp/opentickets-scotlandphp.git",
-                "reference": "b1d1b61d2c19240cfb4923a8aee0368037c329ea"
+                "reference": "7d1bf9e2268327266ef2eab8912cdafff6c621c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scotlandphp/opentickets-scotlandphp/zipball/b1d1b61d2c19240cfb4923a8aee0368037c329ea",
-                "reference": "b1d1b61d2c19240cfb4923a8aee0368037c329ea",
+                "url": "https://api.github.com/repos/scotlandphp/opentickets-scotlandphp/zipball/7d1bf9e2268327266ef2eab8912cdafff6c621c0",
+                "reference": "7d1bf9e2268327266ef2eab8912cdafff6c621c0",
                 "shasum": ""
             },
             "type": "library",
@@ -2479,7 +2479,7 @@
                 "source": "https://github.com/scotlandphp/opentickets-scotlandphp/tree/master",
                 "issues": "https://github.com/scotlandphp/opentickets-scotlandphp/issues"
             },
-            "time": "2017-05-20 14:18:15"
+            "time": "2017-05-20 14:22:42"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
