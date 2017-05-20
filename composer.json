@@ -52,12 +52,18 @@
     "zendframework/zendxml": "^1.0.1",
     "zfr/zfr-stripe-module": "~4.0",
     "crossjoin/pre-mailer": "^1.0",
-    "carnage/zendfony-cli": "~0.1.0"
+    "carnage/zendfony-cli": "~0.1.0",
+    "scotlandphp/opentickets-scotlandphp": "dev-master"
   },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@github.com:scotlandphp/opentickets-scotlandphp.git"
+    }
+  ],
   "autoload": {
     "psr-4": {
-      "OpenTickets\\Tickets\\": "module/Tickets/src",
-      "OpenTickets\\ScotlandPHP\\": "module/ScotlandPHP/src"
+      "OpenTickets\\Tickets\\": "module/Tickets/src"
     }
   },
   "autoload-dev": {
