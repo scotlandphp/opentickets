@@ -1,7 +1,6 @@
-# Vagrant Chef for CakePHP [![Build Status](https://img.shields.io/travis/FriendsOfCake/vagrant-chef/master.svg?style=flat-square)](https://travis-ci.org/FriendsOfCake/vagrant-chef)
 
 
-Vagrant Chef creates a Vagrant installation for CakePHP using Chef with the following features:
+Vagrant Chef creates a Vagrant installation for ScotlandPHP using Chef with the following features:
 
 - Ubuntu 14.04 LTS Trusty Tahr
 - Nginx 1.10 (via [ppa](https://launchpad.net/~nginx/+archive/ubuntu/stable))
@@ -38,28 +37,6 @@ Vagrant Chef creates a Vagrant installation for CakePHP using Chef with the foll
 - Patience, and about an hour or so of your time
 - A fairly fast internet connection. Dial-up will take 3 days to get everything going ;)
 
-## Installation
-
-Download and install both VirtualBox and Vagrant for your particular operating system. Should only take a few minutes on a DSL connection.
-
-Once those are downloaded, open up a terminal. We'll need to clone this repository and setup vagrant:
-
-```bash
-git clone https://github.com/FriendsOfCake/vagrant-chef.git
-cd vagrant-chef
-```
-
-Now we need to setup the vagrant installation. This is pretty easy:
-
-```bash
-vagrant up
-```
-
-Alternativly if you would like to make use of [Vagrant Cloud](https://vagrantcloud.com/friendsofcake/cakephp-baking/version/1) you can simply run the following.
-
-```bash
-vagrant init friendsofcake/cakephp-baking
-```
 
 It may take a bit to download the Vagrant box, but once that is done, you will be prompted for your laptop password. This is so we can properly expose the IP of the vagrant instance to your machine. Type in your password and let it continue running.
 
@@ -94,9 +71,6 @@ When you want to use vagrant instance for a development environment, you can cre
 
 Anything in `app/webroot/index.php` will be served up, and all other `index.php` files ignored.
 
-Note, we recommend using the [FriendsOfCake/app-template](https://github.com/FriendsOfCake/app-template) for new applications.
-
-### Custom Domain Name
 
 If you want to access the site using a custom domain name, edit your `/etc/hosts` file to have the following line:
 
@@ -129,7 +103,7 @@ cd path/to/vagrant-chef
 mkdir -p apps
 ```
 
-Next, copy your CakePHP repository to the `apps` directory. For instance, if you want to have a `blog` project, your directory structure would be similar to the following:
+Next, copy repository to the `apps` directory. For instance, if you want to have a `blog` project, your directory structure would be similar to the following:
 
     |-/vagrant/apps
     | |-/vagrant/apps/blog
