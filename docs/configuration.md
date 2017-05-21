@@ -18,6 +18,16 @@ To configure the database make a copy of `config/autoload/mail.local.php.dist` a
 details under the website key are used to ensure that the correct urls are put in emails 
 sent out by the app. 
 
+## Google Analytics
+
+To configure Google Analytics make a copy of `module/GoogleAnalytics/config/google-analytics.local.php` as 
+`config/autoload/google-analytics.local.php` and set your own Google Analytics tracking ID.
+
+By default, the tracking ID is an empty key, which disables the Google Analytics integration.
+
+When overriding the `layout.phtml` view with your own do no forget to call the view helper
+(`<?= $this->googleAnalytics() ?>`) in the `<head>` section.
+
 ## Open tickets
 
 The final config file to look at is `config/autoload/opentickets.local.php.dist` copy this 
