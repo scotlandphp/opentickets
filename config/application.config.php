@@ -11,7 +11,6 @@ return [
         //'ZfcRbac',
         'ZfrStripeModule',
         'OpenTickets\Tickets',
-        'OpenTickets\GoogleAnalytics',
         'OpenTickets\ScotlandPHP',
     ],
 
