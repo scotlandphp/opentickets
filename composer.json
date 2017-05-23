@@ -63,8 +63,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "OpenTickets\\Tickets\\": "module/Tickets/src",
-      "OpenTickets\\GoogleAnalytics\\": "module/GoogleAnalytics/src"
+      "OpenTickets\\Tickets\\": "module/Tickets/src"
     }
   },
   "autoload-dev": {
